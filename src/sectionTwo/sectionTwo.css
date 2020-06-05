@@ -1,0 +1,34 @@
+#sectionTwo {
+    position: relative;
+    margin-bottom: 20vh;
+}
+.sectionTwo__container {
+    color: black;
+    text-align: center;
+}
+
+.sectionTwo__container h2 {
+    font-size: 21px;
+}
+
+.sectionTwo__circle {
+    background: #008cba;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    margin: 5px auto;
+}
+
+.sectionTwo__tabs__container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4vh auto;
+    justify-content: flex-end;
+}
+
+.sectionTwo__tabs {
+    margin-right: 15px;
+    color: black;
+    font-size: 18px;
+}

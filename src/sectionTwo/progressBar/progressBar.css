@@ -1,0 +1,29 @@
+.progress-bar {
+    position: relative;
+    height: 10px;
+    width: 350px;
+    border-radius: 50px;
+    border: 1px solid #333;
+}
+
+.filler {
+    background: #1da598;
+    height: 100%;
+    border-radius: inherit;
+    transition: width 0.2s ease-in;
+}
+
+.filler::before {
+    content: "";
+}
+
+.filler::after {
+    content: "";
+
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #66ccff;
+    border: solid 4px #fff;
+    margin: 6px;
+}

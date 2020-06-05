@@ -1,0 +1,57 @@
+.menuSlider__item {
+    position: relative;
+    width: 100vw;
+    max-height: 300px;
+}
+
+.menuSlider__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.slick-slider {
+    top: 40px;
+}
+
+.slick-slider img {
+    object-position: center; /* Position of the image in it's parent */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-slider .slick-dots {
+    bottom: 15px;
+}
+.slick-slider .slick-next {
+    right: 15px;
+    z-index: 15;
+}
+
+.slick-slider .slick-prev {
+    left: 15px;
+    z-index: 15;
+}
+
+.slick-slider .slick-dots li button {
+    border: 2px solid white;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+.slick-slider .slick-dots li.slick-active button:before {
+    color: #1292ee;
+    font-size: 18px;
+}
+
+.slick-slider .slick-dots li button:before {
+    top: 1px;
+    color: transparent;
+}

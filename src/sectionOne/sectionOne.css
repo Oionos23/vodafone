@@ -1,0 +1,112 @@
+#sectionOne {
+    position: relative;
+    margin-top: 55vh;
+    background-color: #f8faff;
+}
+
+.sectionOne__container {
+    color: black;
+    text-align: center;
+}
+
+.sectionOne__container h2 {
+    font-size: 21px;
+}
+
+.sectionOne__circle {
+    background: #008cba;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    margin: 5px auto;
+}
+
+.sectionOne__tabs__container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4vh auto;
+    justify-content: flex-end;
+}
+
+.sectionOne__tabs {
+    margin-right: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+.sectionOne__gallery {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+}
+
+.sectionOne__gallery__item1 {
+    position: relative;
+    width: 370px;
+    height: 630px;
+    text-align: center;
+    background-size: cover;
+}
+
+.sectionOne__gallery__item2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    font-size: 38px;
+}
+
+.sectionOne__gallery__flex-item {
+    position: relative;
+    height: 300px;
+    min-width: 370px;
+    margin: 15px auto;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #008cba;
+}
+
+.sectionOne__gallery__item1:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sectionOne__gallery__flex-item:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.sectionOne__gallery__underline {
+    width: 50%;
+    height: 2px;
+    background: white;
+    margin: 10px auto;
+}

@@ -1,0 +1,38 @@
+.menu {
+    width: 100%;
+    padding: 2% 0;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    z-index: 100;
+    background-color: #404859;
+}
+
+.menu__container {
+    width: 24vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu__tabs {
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.menu__circle {
+    background: #2f922f;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    margin: 5px auto;
+}
+
+.push {
+    margin-left: auto;
+}
+
+/* searchButton Button */

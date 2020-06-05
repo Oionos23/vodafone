@@ -1,0 +1,108 @@
+.searchBar {
+    -webkit-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-right: 3%;
+}
+
+.searchBar__input {
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+    -webkit-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    background-color: transparent;
+    outline: none;
+    width: 0px;
+    border: none;
+    border-bottom: 2px white solid;
+    color: transparent;
+    opacity: 0;
+    padding-right: 40px;
+}
+
+.activated {
+    width: 150px;
+    color: white;
+    opacity: 1;
+}
+
+.searchBar__glass {
+    -webkit-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    position: absolute;
+    right: 0px;
+    bottom: -8px;
+    width: 20px;
+    height: 20px;
+}
+
+.searchBar__glass__moved {
+    -webkit-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0px;
+    right: 0px;
+}
+
+@media (max-width: 900px) {
+    .activated {
+        width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .searchBar {
+        margin-right: 10%;
+        margin-top: 2%;
+        top: 10px;
+    }
+
+    .searchBar__input {
+        font-family: GothLight;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        -webkit-transition: all 0.7s ease 0s;
+        -o-transition: all 0.7s ease 0s;
+        transition: all 0.7s ease 0s;
+        background-color: transparent;
+        outline: none;
+        width: 0px;
+        border: none;
+        color: transparent;
+        padding-right: 40px;
+    }
+    .activated {
+        width: 65vw;
+        padding: 10px 20px;
+        background-color: #2b2b2b;
+        border-radius: 14px;
+        color: white;
+    }
+    .searchBar__glass__moved {
+        -webkit-transition: all 0.7s ease 0s;
+        -o-transition: all 0.7s ease 0s;
+        transition: all 0.7s ease 0s;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 8px;
+        right: 8px;
+    }
+}
