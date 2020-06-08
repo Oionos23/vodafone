@@ -79,7 +79,7 @@ h2 {
     height: 55px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .sectionTwo__flex__container {
         width: 100%;
         flex-direction: column;

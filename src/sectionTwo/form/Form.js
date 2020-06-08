@@ -22,7 +22,7 @@ const Form = ({ sectionTwo }) => {
                             <PhoneInput
                                 id="tel"
                                 className={`input ${errors.tel && "is-danger"}`}
-                                placeholder="Enter phone number"
+                                placeholder={formLabels[0]}
                                 value={value || ""}
                                 onChange={setValue}
                                 required
