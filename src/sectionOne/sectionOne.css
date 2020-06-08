@@ -46,7 +46,7 @@
 
 .sectionOne__gallery__item1 {
     position: relative;
-    width: 370px;
+    min-width: 370px;
     height: 630px;
     text-align: center;
     background-size: cover;

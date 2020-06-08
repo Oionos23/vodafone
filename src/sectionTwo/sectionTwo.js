@@ -2,8 +2,9 @@ import React from "react";
 import "./sectionTwo.css";
 
 import ProgressBar from "./progressBar/progressBar";
+import Form from "./form/Form";
 
-const sectionTwo = ({ homePage }) => {
+const sectionTwo = ({ homePage, sectionTwo }) => {
     const renderSectionTwo = () => {
         return homePage.map((item, index) => (
             <div className="sectionTwo__container">
@@ -23,14 +24,12 @@ const sectionTwo = ({ homePage }) => {
 
     return (
         <section id="sectionTwo">
-            {console.log(homePage)}
             {renderSectionTwo()}
-            <div
-                style={{
-                    height: "15px",
-                }}
-            ></div>
-            <ProgressBar percentage={100} />
+            {sectionTwo !== undefined ? (
+                <Form sectionTwo={sectionTwo} />
+            ) : undefined}
+
+            {/* <ProgressBar percentage={100} /> */}
         </section>
     );
 };

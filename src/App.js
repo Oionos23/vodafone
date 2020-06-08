@@ -25,6 +25,7 @@ class App extends Component {
                 this.setState({
                     sectionOneImages,
                     homePage: response,
+                    sectionTwo: response[0].sections[1],
                 });
             },
             error: function (err) {
@@ -68,8 +69,10 @@ class App extends Component {
                     homePage={this.state.homePage}
                     images={this.state.sectionOneImages}
                 />
-
-                <SectionTwo homePage={this.state.homePage} />
+                <SectionTwo
+                    homePage={this.state.homePage}
+                    sectionTwo={this.state.sectionTwo}
+                />
             </>
         );
     }
